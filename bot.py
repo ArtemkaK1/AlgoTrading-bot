@@ -1,7 +1,6 @@
 import time
 import json
 from telegram.ext import Updater, CommandHandler
-# https://python-telegram-bot.readthedocs.io/en/stable/telegram.html
 from calculations import get_price, count_profit, count_price_fall, should_i_buy
 
 
