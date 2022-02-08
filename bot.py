@@ -49,7 +49,7 @@ def make_money(update, context):
             final_message.append(message)
             time.sleep(2)
 
-        with open('my_cryptocoins.json', 'w') as my_coins_data:
+        with open('cryptocoins.json', 'w') as my_coins_data:
             my_coins_data.write(json.dumps(my_coins, sort_keys=True, indent=2))
 
         context.bot.send_message(chat_id=chat_id, text='\n'.join(final_message))
